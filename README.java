@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class BladesofGlory {
     public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-     double biggest_score = 0;
+        double biggest_score = 0;
         double smallest_score = 10.1;
         double total_score = 0;
         double total_judge_scores = 7;
