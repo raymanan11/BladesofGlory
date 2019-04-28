@@ -6,25 +6,30 @@ public class BladesofGlory {
         double smallest_score = 10.1;
         double total_score = 0;
         double total_judge_scores = 7;
+       
         for (int judge = 1; judge <= 9; judge++) {
             System.out.println("Please enter Judge #" + judge + "'s score: ");
             double score = input.nextDouble();
         // for loop written so it will ask user input 9 times for 9 judges and print which judge is giving the score
+            
             while (score < 0 || score >10) {
                 System.out.println("Please enter Judge #" + judge + "'s score: ");
                 score = input.nextDouble();
             }
             // while loop is to validate that user input is between 0 to 10
+            
             if (score > biggest_score) {
                 biggest_score = score;
             }
             // if statement is to find biggest value out of all user inputs
             // if user input (score) is bigger than biggest_score then biggest_score will = score
+            
             else if (score < smallest_score) {
                 smallest_score = score;
             }
             // else statement is to find smallest value out of all user inputs
             // if user input is less than smallest score then smallest score = score
+            
             total_score += score;
             // adds up all of the user input (score) together
         }
